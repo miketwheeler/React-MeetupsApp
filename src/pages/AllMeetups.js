@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import MeetupList from '../components/meetups/MeetupList';
 
 const DUMMYDATA = [
 	{
@@ -20,15 +21,12 @@ const DUMMYDATA = [
 		  'This is a first, amazing meetup which you definitely should not miss. It will be a lot of fun!',
 	  },
 	];
+
 function AllMeetupsPage() {
 	return (
 		<section>
 			<h1>All Meetups</h1>
-			<ul>
-				{DUMMYDATA.map((meetup)=> {
-					return <li key={meetup.id}>{meetup.title}</li>;
-				})}
-			</ul>
+				<MeetupList meetups={DUMMYDATA} />
 		</section>
 	)
 }
