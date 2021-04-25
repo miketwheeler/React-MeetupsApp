@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import layoutStyles from './Layout.module.css';
 import MainNavigation from './MainNavigation';
 
@@ -6,7 +6,7 @@ import MainNavigation from './MainNavigation';
 function Layout(props) {
 	return (
 		<div>
-			<MainNavigation/>
+			<MainNavigation />
 			<main className={layoutStyles.main}>
 				{props.children}
 			</main>
@@ -14,4 +14,4 @@ function Layout(props) {
 	)
 }
 
-export default Layout
+export default Layout;
